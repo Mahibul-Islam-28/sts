@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-content{
+    min-height: 95vh;
+    box-sizing: border-box;
+}
+.alert-section
+{
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 100%;
+    width: fit-content;
+}
+/* Navbar */
+.navbar{
+    background-color: #1c1c1c;
+    color: #fff;
+    --bs-navbar-padding-y: 0 !important;
+    letter-spacing: 1px;
+    box-shadow: 5px 1px 15px #5a5a5a;
+}
+.navbar .navbar-brand{
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 0;
+}
+.navbar .nav-item{
+    padding: 10px 5px;
+    margin: 0 5px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.navbar .nav-item .nav-link{
+    color: #fff;
+}
+.navbar .nav-item:hover .nav-link,
+.navbar .nav-item .nav-link.active{
+    color: #00D37E;
+    transition: ease-in-out .5s;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer-section{
+    background-color: #f9f9f9;
+    color: #111;
+    font-family: "Ropa Sans", sans-serif;
+    letter-spacing: 1px;
+    padding: 20px 0;
+}
+.footer-section a{
+    text-decoration: none;
+    color: #111;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Other */
+.button{
+    background-color: #4976B1;
+    padding: 5px 15px;
+    padding-bottom: 7px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-top: 7px;
+    max-width: 175px;
+    text-align: center;
+}
+.button:hover{
+    background-color: #29496f;
+    color: #a9d1ff;
+    transition: ease-out .5s;
+}
+.create-btn
+{
+    margin: 0 auto;
+    padding: 8px 20px;
+    font-weight: 500;
+    color: #ffffffe3;
+    background: #0c4911;
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.create-btn:hover
+{
+    background: #334c66;
+    color: #ffffffe3;
+    transition: ease-in .3s;
+}
+
+/* data table */
+.dataTables_wrapper .dataTables_filter {
+    margin-bottom: 10px;
+}
+
+table.dataTable {
+    border-collapse: collapse;
+}
+
+#myTable_filter input {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 5px 7px;
+}
+
+#myTable_filter input:focus {
+    outline: none;
+}
+table.dataTable thead>tr>th.sorting:after,
+table.dataTable thead>tr>th.sorting:before{
+    color: #cfcfcf;
+    opacity: 1;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .button {
+        display: block;
+        margin: 5px 2px;
+    }
+}

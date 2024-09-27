@@ -1,0 +1,97 @@
+/* Login */
+.main-content{
+    background: url('../../images/bg.jpg');
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+.form-section{
+    height: 100%;
+    place-items: center;
+}
+.form-section h3{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#ticket-form {
+    width: 70%;
+    border: none;
+    padding: 20px 25px;
+    border-radius: 5%;
+    margin: 0 auto;
+    text-align: center;
+}
+#ticket-form label{
+    font-weight: 500;
+}
+#ticket-form input[type=text],
+#ticket-form input[type=file],
+#ticket-form textarea {
+    background: transparent;
+    color: #333;
+    padding: 10px 15px;
+    border: 1px solid #9c9c9c;
+}
+::placeholder {
+    color: #6b6b6be7 !important;
+  }
+::-ms-input-placeholder {
+    color: #6b6b6be7;
+}
+input:-internal-autofill-selected {
+    background-color: transparent !important;
+    background-image: none !important;
+
+}
+#ticket-form label{
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+#ticket-form input[type=text]:focus,
+#ticket-form input[type=text]:active,
+#ticket-form input[type=file]:focus,
+#ticket-form input[type=file]:active,
+#ticket-form textarea:focus,
+#ticket-form textarea:active {
+    box-shadow: none;
+    background: #ebebebe7;
+}
+.button-part {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.button-part .submit-btn
+{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px 20px;
+    font-weight: 500;
+    color: #ffffffe3;
+    background: #111;
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+.button-part .submit-btn:hover
+{
+    background: #00D37E;
+    color: #ffffffe3;
+    transition: ease-in .3s;
+}
+
+@media only screen and (max-width: 991px) {
+    .main-content{
+        min-height: 90vh;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #ticket-form {
+        width: 90%;
+    }
+}

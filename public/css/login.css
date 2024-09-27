@@ -1,0 +1,92 @@
+/* Login */
+.main-content{
+    background: linear-gradient(0deg, #eeeffd, #eeeffd), #FFFFFF;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+.form-section{
+    height: 100%;
+    place-items: center;
+}
+#login-form {
+    width: 300px;
+    background-color: #fff;
+    border: none;
+    padding: 20px 25px;
+    border-radius: 5%;
+    margin: 0 auto;
+    text-align: center;
+}
+#login-form h3{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#login-form label{
+    font-weight: 500;
+}
+#login-form input[type=email]{
+    margin-top: 15px;
+    margin-bottom: 35px;
+    background-color: #fff;
+}
+#login-form input[type=email],
+#login-form input[type=password] {
+    background-color: #f1f3ff;
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+}
+::placeholder {
+    color: #6b6b6be7 !important;
+  }
+::-ms-input-placeholder {
+    color: #6b6b6be7;
+}
+input:-internal-autofill-selected {
+    background-color: transparent !important;
+    background-image: none !important;
+
+}
+#login-form input[type=email]:focus,
+#login-form input[type=email]:active,
+#login-form input[type=password]:focus,
+#login-form input[type=password]:active {
+    border: none;
+    box-shadow: none;
+}
+.button-section{
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.button-part .login-btn
+{
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    padding: 8px 20px;
+    font-weight: 500;
+    color: #ffffffe3;
+    font-weight: bold;
+    background: #111;
+    border: 1px solid #ffffffe3;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+.button-part .login-btn:hover
+{
+    background: #eeeffd;
+    color: #111;
+    transition: ease-in .3s;
+}
+
+@media only screen and (max-width: 991px) {
+    .main-content{
+        min-height: 90vh;
+    }
+}
