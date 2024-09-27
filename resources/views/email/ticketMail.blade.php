@@ -9,7 +9,6 @@
     <style type="text/css">
         h3{
             font-weight: bold;
-            margin-bottom: 5px;
         }
         p{
             text-align: justify;

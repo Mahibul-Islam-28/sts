@@ -8,7 +8,6 @@
 
   // Ticket
   function closeTicket(id) {
-    alert(id);
   $.ajax({
       url: "{{ route('closeTicket') }}",
       method: 'GET',
